@@ -1,9 +1,26 @@
+
 #info-plane
 {
     width: 10%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
 }
+
 
 #info-instagram
 {
     width: 10%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#info-soccer
+{
+    width: 10%;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
 }

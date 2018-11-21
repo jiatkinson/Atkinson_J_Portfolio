@@ -16,5 +16,13 @@ var animation = bodymovin.loadAnimation({
     path: './data/info-instagram.json'
 })
 
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('info-soccer'),
+    renderer : 'svg',
+    loop: true,
+    autoplay: true,
+    path: './data/info-soccer.json'
+})
+
 
 })();
