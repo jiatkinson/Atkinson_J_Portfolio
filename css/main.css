@@ -1,4 +1,27 @@
 
+html {
+    font-size: 12px;
+    min-height: 100%;
+}
+  
+body {
+    font-family: "metropolis", "Helvetica", sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+  
+#myContainer
+{
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+
+
+
+
+
 #info-plane
 {
     width: 10%;
