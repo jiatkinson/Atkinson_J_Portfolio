@@ -42,8 +42,20 @@
 
     </header>
 
+
+<!-- Video Background -->
+    <div id="homePage">
+        <div class="bg-video row">
+            <video class="bg-video_content small-12 columns" autoplay muted loop></video>
+        </div>
+        <div class="homeText">
+                <h1>Jacob Atkinson</h1>
+                <h2>Content Creator</h2>
+        </div>
+    </div>
 <!-- ABOUT ME -->
     <section id="about-me" class="row">
+        <h1 class="hide">About Me</h1>
 
         <div id="education" class="small-12 columns">
 
@@ -300,30 +312,37 @@
             <button id="photo-button">Photos</button>
         </div><br>
 
+        <div id="lightBoxContent">
+                <div class="responsive">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/H7AKS97cbH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+
         <div class="video-section">
-            <div class="small-12 medium-6 large-4 columns video">
-                <img src="images/block-party.png" alt="Block Party Thumbnail">
+            <div id="video1" class="small-12 medium-6 large-4 columns video">
+                <img src="images/video-1.png" alt="Block Party Thumbnail">
             </div>
-            <div class="small-12 medium-6 large-4 columns video">
-                <img src="images/hessenland.png" alt="Hessenland Thumbnail">
+            <div id="video2" class="small-12 medium-6 large-4 columns video">
+                <img src="images/video-2.png" alt="Hessenland Thumbnail">
             </div>
-            <div class="small-12 medium-6 large-4 columns video">
-                <img src="images/caretaker.png" alt="Caretaker Thumbnail">
+            <div id="video3" class="small-12 medium-6 large-4 columns video">
+                <img src="images/video-3.png" alt="Caretaker Thumbnail">
             </div>
-            <div class="small-12 medium-6 large-4 columns video">
-                <img src="images/julie-hawkins.png" alt="Julie Hawkins Thumbnail">
+            <div id="video4" class="small-12 medium-6 large-4 columns video">
+                <img src="images/video-4.png" alt="Julie Hawkins Thumbnail">
             </div>
-            <div class="small-12 medium-6 large-4 columns video">
-                <img src="images/ontarios-blue-coast.png" alt="Ontario's Blue Coast Thumbnail">
+            <div id="video5" class="small-12 medium-6 large-4 columns video">
+                <img src="images/video-5.png" alt="Ontario's Blue Coast Thumbnail">
             </div>
-            <div class="small-12 medium-6 large-4 columns video">
-                <img src="images/on-my-high.png" alt="On My High Thumbnail">
+            <div id="video6" class="small-12 medium-6 large-4 columns video">
+                <img src="images/video-6.png" alt="On My High Thumbnail">
             </div>
         </div>
 
-
-
     </section>
+
+
+
 
 
 <!-- CLIENTS -->
@@ -346,9 +365,26 @@
 
 
 <!-- CONTACT -->
-    <section id="contact">
-
+<div class="contact">  
+        <form id="contact" action="" method="post">
+        <h1>Great Minds Work Together</h1>
+          <fieldset>
+            <input placeholder="Name" type="text" tabindex="1" required autofocus>
+          </fieldset>
+          <fieldset>
+            <input placeholder="Email" type="email" tabindex="2" required>
+          </fieldset>
+          <fieldset>
+            <textarea placeholder="Message" tabindex="5" required></textarea>
+          </fieldset>
+          <fieldset>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+          </fieldset>
+        </form>
+      </div>
     </section>
+
+
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
