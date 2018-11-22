@@ -1,0 +1,372 @@
+/*General Rules for Elements*/
+
+@font-face
+{
+font-family: 'Metropolis-SemiBold';
+src: url('../fonts/Metropolis-SemiBold.otf');
+}
+
+@font-face
+{
+font-family: 'Metropolis-Black';
+src: url('../fonts/Metropolis-Black.otf');
+}
+
+@font-face
+{
+font-family: 'Metropolis-RegularItalic';
+src: url('../fonts/Metropolis-RegularItalic.otf');
+}
+
+@font-face
+{
+font-family: 'Avenir-Light';
+src: url('../fonts/AvenirLTStd-Light.woff');
+}
+
+@font-face
+{
+font-family: 'Avenir-Medium';
+src: url('../fonts/AvenirLTStd-Medium.woff');
+}
+
+@font-face
+{
+font-family: 'Avenir-Black';
+src: url('../fonts/AvenirLTStd-Black.woff');
+}
+
+
+body
+{
+  font-family: 'Avenir', monospace, helvetica;
+  background-color: #F7F7F7;
+}
+
+p
+{
+  color: #3f3f3f;
+}
+
+h1
+{
+  font-family: 'Avenir-Light', arial, sans-serif;
+  color: #3f3f3f;
+  text-transform: uppercase;
+}
+
+
+
+/*Header*/
+
+#mainHeader
+{
+  position: relative;
+}
+
+.headerTitle h1
+{
+    font-size: 21px;
+    font-weight: lighter;
+    float: right;
+    margin-top: 15px;
+}
+
+.title-bar
+{
+  margin-right: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-right: 15px;
+  background-color: #F7F7F7;
+}
+
+.menu-icon::after
+{
+  background: #3f3f3f;
+  box-shadow: 0 11px 0 #3f3f3f, 0 22px 0 #3f3f3f;
+  border-radius: 10px;
+  width: 160%;
+  height: 40%;
+}
+
+.menu-icon:hover::after
+{
+  background: #b3212c;
+  box-shadow: 0 11px 0 #b3212c, 0 22px 0 #b3212c;
+}
+
+#mainNav
+{
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  margin-top: 12px;
+  font-family: 'Avenir-Light', cursive, Helvetica;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+#mainNav a
+{
+  display: block;
+  padding: 5px 0 5px 0;
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+#mainNav li
+{
+  border-bottom: 1px solid #efefef;
+}
+
+#mainNav li:first-child
+{
+  border-top: 1px solid #efefef;
+}
+
+#mainNav li:last-child
+{
+  margin-bottom: 20px;
+}
+
+#mainNav li a:hover
+{
+  color: #b3212c;
+}
+
+
+#about-me h1
+{
+  font-family: 'Avenir';
+  font-weight: bold;
+  text-align: center;
+  font-size: 28px;
+}
+
+#about-me h2
+{
+  font-family: 'Avenir';
+  text-align: center;
+  font-size: 17px;
+  margin-top: -10px;
+}
+
+#education-bars h3
+{
+  font-family: 'Metropolis-Black';
+  font-size: 15px;
+  color: #b3212c;
+}
+
+#education-bars p
+{
+  font-family: 'Metropolis-RegularItalic';
+  font-size: 15px;
+  color: #3f3f3f;
+  margin-top: -10px;
+}
+
+
+.mobile-hide
+{
+  display: none;
+}
+
+
+#animate-plane
+{
+    width: 40%;
+    display: block;
+    position: relative;
+    margin: 0 auto;  
+}
+
+#animate-instagram
+{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+#animate-soccer
+{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.info-text
+{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-text h1
+{
+  font-family: 'Metropolis-Black';
+  font-size: 30px;
+}
+
+.info-text p
+{
+  font-family: 'Metropolis-Regular';
+  font-size: 14px;
+  margin-top: -15px;
+}
+
+#my-work
+{
+  text-align: center;
+}
+
+.video
+{
+  margin-bottom: 20px;
+}
+
+
+
+
+#clients
+{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#clients h1
+{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-family: 'Avenir';
+  font-weight: bold;
+  text-align: center;
+  font-size: 28px;
+}
+
+#clients ul
+{
+  margin: 0 auto;
+}
+
+#clientList li
+{
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#clientList li a:hover
+{
+  color: #b3212c;
+}
+
+#clientList a
+{
+  color: #3f3f3f;
+  text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 640px){
+
+.mobile-hide
+{
+  display: block;
+}
+
+}
+
+
+@media screen and (min-width: 1024px){
+
+  .headerTitle h1
+  {
+    font-size: 21px;
+    font-weight: lighter;
+    float: left;
+    margin-top: 15px;
+  }
+
+  #mainNav
+  {
+    font-size: 1.9em;
+    margin-top: 5px;
+    float: right;
+  }
+
+  #mainNav a
+  {
+    display: inline;
+    background-color: transparent;
+    margin-left: 13px;
+    color: #3f3f3f;
+  }
+
+  #mainNav li
+  {
+    display: inline;
+    border: none;
+  }
+
+  #mainNav li:first-child
+  {
+    border: none;
+  }
+
+  #mainNav li a:hover
+  {
+    background-color: transparent;
+    color: #b3212c;
+  }
+
+
+
+  #unique-info
+  {
+    margin: 0 auto;
+  }
+
+  .info-icons h1, p
+  {
+    text-align: center;
+  }
+
+
+  #animate-plane
+  {
+      width: 80%;
+  }
+  
+  
+  #animate-instagram
+  {
+      width: 80%;
+  }
+  
+  #animate-soccer
+  {
+      width: 80%;
+  }
+
+  .info-text
+{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-text h1
+{
+  font-size: 25px;
+}
+
+.info-text p
+{
+  font-size: 12px;
+  margin-top: -15px;
+}
+
+}
