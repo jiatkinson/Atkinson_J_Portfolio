@@ -1,5 +1,7 @@
 (() => {
 
+    console.log("Welcome to my Portfolio");
+
     $(document).foundation()
 
 var animation = bodymovin.loadAnimation({
@@ -63,6 +65,52 @@ c.start();
 var c = new CountUp("counter3",0,5);
 
 c.start();
+
+
+
+document.getElementById ("video1").addEventListener ("click", showLightBox);
+
+function showLightBox() {
+
+    document.getElementById('lightBoxContent').style.display = "block";
+
+}
+
+
+
+
+
+  //! VARIABLES
+
+    const backgroundVideo = document.querySelector('.bg-video_content');
+
+
+  //! FUNCTIONS
+
+  // Helper Functions: create <source> video element to load dynamically different video size
+  function videoSource(element, src, type) {
+    var source = document.createElement('source');
+
+    source.src = src;
+    source.type = type;
+
+    element.appendChild(source);
+  }
+
+  //! EVENTS
+  window.addEventListener('load', () => {
+
+    // create source video element according to screen size
+    if (window.matchMedia("(max-width: 700px)").matches) {
+      videoSource(backgroundVideo, 'video/bg_videos/mobile.m4v', 'video/mp4');
+    } else if (window.matchMedia("(max-width: 999px)").matches) {
+      videoSource(backgroundVideo, 'video/bg_videos/tablet.m4v', 'video/mp4');
+    } else if (window.matchMedia("(min-width: 1000px)").matches) {
+      videoSource(backgroundVideo, 'video/bg_videos/desktop.m4v', 'video/mp4');
+    }
+
+  });
+
 
 
 
