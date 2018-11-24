@@ -169,7 +169,7 @@ padding-top: 50%;
 .bg-video {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100%; /* Change this for each media query */
   opacity: 1;
   overflow: hidden;
   z-index: -1;
