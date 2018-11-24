@@ -82,7 +82,9 @@ function showLightBox() {
 
   //! VARIABLES
 
-    const backgroundVideo = document.querySelector('.bg-video_content');
+    const backgroundVideo = document.querySelector('.bg-video_content'),
+          titleBar = document.querySelector('title-bar');
+
 
 
   //! FUNCTIONS
@@ -97,10 +99,15 @@ function showLightBox() {
     element.appendChild(source);
   }
 
+  function toggleMenu(){
+    // Check to see if it's open or not, open and close it. If statement to check class is there or not. Add element.classlist.add('class name') .... Add element.classlist.remove('class name')
+
+  }
+
   //! EVENTS
   window.addEventListener('load', () => {
 
-    // create source video element according to screen size
+    // Create source video element according to screen size
     if (window.matchMedia("(max-width: 700px)").matches) {
       videoSource(backgroundVideo, 'video/bg_videos/mobile.m4v', 'video/mp4');
     } else if (window.matchMedia("(max-width: 999px)").matches) {
@@ -111,8 +118,7 @@ function showLightBox() {
 
   });
 
-
-
+  title-bar.addEventListener("click", toggleMenu);
 
 
 })();
