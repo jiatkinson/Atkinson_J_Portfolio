@@ -78,18 +78,16 @@ function showLightBox() {
 
 
 
-
-
   //! VARIABLES
 
-    const backgroundVideo = document.querySelector('.bg-video_content'),
-          titleBar = document.querySelector('title-bar');
+
+    const backgroundVideo = document.querySelector('.bg-video_content');
 
 
 
   //! FUNCTIONS
 
-  // Helper Functions: create <source> video element to load dynamically different video size
+
   function videoSource(element, src, type) {
     var source = document.createElement('source');
 
@@ -99,15 +97,13 @@ function showLightBox() {
     element.appendChild(source);
   }
 
-  function toggleMenu(){
-    // Check to see if it's open or not, open and close it. If statement to check class is there or not. Add element.classlist.add('class name') .... Add element.classlist.remove('class name')
 
-  }
 
   //! EVENTS
-  window.addEventListener('load', () => {
 
-    // Create source video element according to screen size
+
+    window.addEventListener('load', () => {
+
     if (window.matchMedia("(max-width: 700px)").matches) {
       videoSource(backgroundVideo, 'video/bg_videos/mobile.m4v', 'video/mp4');
     } else if (window.matchMedia("(max-width: 999px)").matches) {
@@ -118,7 +114,7 @@ function showLightBox() {
 
   });
 
-  title-bar.addEventListener("click", toggleMenu);
+
 
 
 })();

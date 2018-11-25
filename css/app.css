@@ -114,6 +114,9 @@ h1
   padding: 5px 0 5px 0;
   color: #3f3f3f;
   text-decoration: none;
+  font-size: 20px;
+  background-color: #F7F7F7;
+  text-align: center;
 }
 
 #mainNav li
