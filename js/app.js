@@ -68,21 +68,15 @@ c.start();
 
 
 
-document.getElementById ("video1").addEventListener ("click", showLightBox);
-
-function showLightBox() {
-
-    document.getElementById('lightBoxContent').style.display = "block";
-
-}
-
 
 
   //! VARIABLES
 
 
-    const backgroundVideo = document.querySelector('.bg-video_content');
-
+    const backgroundVideo = document.querySelector('.bg-video_content'),
+          clickMe = document.querySelector('.video'),
+          lightBox = document.querySelector('.light-box'),
+          closeBox = document.querySelector('.exit');
 
 
   //! FUNCTIONS
@@ -95,6 +89,14 @@ function showLightBox() {
     source.type = type;
 
     element.appendChild(source);
+  }
+
+  function openLightBox(){
+    lightBox.classList.add('show-lightbox');
+  }
+    
+  function closeLightBox(){
+    lightBox.classList.remove('show-lightbox');
   }
 
 
@@ -114,7 +116,8 @@ function showLightBox() {
 
   });
 
-
+    clickMe.addEventListener('click', openLightBox);
+    closeBox.addEventListener('click', closeLightBox);
 
 
 })();

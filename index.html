@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.1/lottie.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
 </head>
@@ -14,11 +13,13 @@
 
 <!-- HEADER -->
 <h1 class="hide">Jacob Atkinson's Portfolio</h1>
-    <header id="mainHeader" class="row">
+    <header id="mainHeaderCon">
+
+        <div id="mainHeader" class="row">
 
         <div class="headerTitle small-12 large-3 columns">
             <h1>Jacob Atkinson</h1>
-        </div class="">
+        </div>
 
 
         <nav class="small-12 large-9 columns">
@@ -28,11 +29,11 @@
                       <button class="menu-icon" type="button" data-toggle></button>
                     </div>
                   </div>
-              </div>
+
           
-                  <div id="main-menu">
+                  <div id="main-menu" class="large-offset-3 large-9 columns">
                     <ul id="mainNav">
-                      <li><a href="#home">Home</a></li>
+                      <li><a href="#homePage">Home</a></li>
                       <li><a href="#about-me">About Me</a></li>
                       <li><a href="#my-work">My Work</a></li>
                       <li><a href="#clients">Clients</a></li>
@@ -40,6 +41,8 @@
                       </ul>
                   </div>
               </nav>
+
+        </div>
 
     </header>
 
@@ -54,6 +57,7 @@
                 <h2>Content Creator</h2>
         </div>
     </div>
+
 <!-- ABOUT ME -->
     <section id="about-me" class="row">
         <h1 class="hide">About Me</h1>
@@ -67,19 +71,19 @@
 
             <div id="education-bars" class="small-12 columns">
 
-                <div id="program1">
+                <div id="program1" class="medium-4 columns">
                         <div id="first-program"></div>                    
                         <h3>Broadcasting - Television</h3>
                         <p>2 years - Diploma</p>
                 </div>
 
-                <div id="program2">
+                <div id="program2" class="medium-4 columns">
                         <div id="second-program"></div>        
                         <h3>Visual Effects and Editing for Contemporary Media</h3>
                         <p>1 year - Certificate</p>
                 </div>
 
-                <div id="program3">
+                <div id="program3" class="medium-4 columns">
                         <div id="third-program"></div>
                         <h3>Interactive Media Design</h3>
                         <p>2 years - Diploma</p>
@@ -89,7 +93,7 @@
 
         </div>
 
-        <div id="skills" class="small-12 columns">
+        <div id="skills" class="small-12 medium-offset-1 medium-10 columns">
             <h1>Skills</h1>
 
         <div id="mobile-chart" class="show-for-small-only columns">
@@ -282,7 +286,7 @@
                 <div id="animate-instagram"></div>
 
                 <div class="info-text">
-                    <h1 id="counter2">5000+</h1>
+                    <h1 id="counter2">5000</h1>
                     <p>followers on Instagram</p>
                 </div>
             </div>
@@ -301,7 +305,7 @@
 
     </section>
 
-
+    <div class="line-separator small-offset-1 small-10 end columns"></div>
 
 <!-- MY WORK -->
     <section id="my-work" class="row">
@@ -313,13 +317,15 @@
             <button id="photo-button">Photos</button>
         </div><br>
 
-        <div id="lightBoxContent">
-                <div class="responsive">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/H7AKS97cbH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
 
         <div class="video-section">
+
+                <div class="light-box small-12 medium-10 columns">
+                    <p class="exit">X</p>
+                    <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/H7AKS97cbH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Block Party Test Video</p>
+                </div>
+
             <div id="video1" class="small-12 medium-6 large-4 columns video">
                 <img src="images/video-1.png" alt="Block Party Thumbnail">
             </div>
@@ -340,18 +346,16 @@
             </div>
         </div>
 
+        <div class="line-separator small-offset-1 small-10 end columns"></div>
+
     </section>
 
-
-
-
-
 <!-- CLIENTS -->
-    <section id="clients">
+    <section id="clients" class="row">
             <h1>Clients</h1>
 
-        <ul id="clientList">
-            <li><a href="https://www.facebook.com/barkingfroglondon">The Barking Fog</a></li>
+        <ul id="clientList" class="small-12 columns">
+            <li><a href="https://www.facebook.com/barkingfroglondon">The Barking Frog</a></li>
             <li><a href="http://blockpartylondon.com">Block Party London</a></li>
             <li><a href="https://www.fanshawefalcons.ca/landing/index">Fanshawe College Athletics</a></li>
             <li><a href="https://www.hessenland.com">Hessenland Inn & Schatz Winery</a></li>
@@ -364,10 +368,11 @@
         </ul>
     </section>
 
+    <div class="line-separator small-offset-1 small-10 end columns"></div>
 
 <!-- CONTACT -->
-<div class="contact">  
-        <form id="contact" action="" method="post">
+<div class="contact row">  
+        <form id="contact" class="small-12 columns" action="" method="post">
         <h1>Great Minds Work Together</h1>
           <fieldset>
             <input placeholder="Name" type="text" tabindex="1" required autofocus>
@@ -379,7 +384,7 @@
             <textarea placeholder="Message" tabindex="5" required></textarea>
           </fieldset>
           <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send Message</button>
           </fieldset>
         </form>
       </div>
