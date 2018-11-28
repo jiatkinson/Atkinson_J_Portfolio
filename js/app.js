@@ -5,30 +5,6 @@
     $(document).foundation()
 
 var animation = bodymovin.loadAnimation({
-    container: document.getElementById('first-program'),
-    renderer : 'svg',
-    loop: false,
-    autoplay: true,
-    path: './data/first-program.json'
-})
-
-var animation = bodymovin.loadAnimation({
-    container: document.getElementById('second-program'),
-    renderer : 'svg',
-    loop: false,
-    autoplay: true,
-    path: './data/second-program.json'
-})
-
-var animation = bodymovin.loadAnimation({
-    container: document.getElementById('third-program'),
-    renderer : 'svg',
-    loop: false,
-    autoplay: true,
-    path: './data/third-program.json'
-})
-
-var animation = bodymovin.loadAnimation({
     container: document.getElementById('animate-plane'),
     renderer : 'svg',
     loop: true,
@@ -52,31 +28,22 @@ var animation = bodymovin.loadAnimation({
     path: './data/animate-soccer.json'
 })
 
+  var c = new CountUp("counter1",0,15);
 
-
-var c = new CountUp("counter1",0,15);
-
-c.start();
-
-var c = new CountUp("counter2",0,5000);
-
-c.start();
-
-var c = new CountUp("counter3",0,5);
-
-c.start();
-
-
-
-
+  c.start();
+  
+  var c = new CountUp("counter2",0,5000);
+  
+  c.start();
+  
+  var c = new CountUp("counter3",0,5);
+  
+  c.start();
 
   //! VARIABLES
 
 
-    const backgroundVideo = document.querySelector('.bg-video_content'),
-          clickMe = document.querySelector('.video'),
-          lightBox = document.querySelector('.light-box'),
-          closeBox = document.querySelector('.exit');
+    const backgroundVideo = document.querySelector('.bg-video_content');
 
 
   //! FUNCTIONS
@@ -90,15 +57,6 @@ c.start();
 
     element.appendChild(source);
   }
-
-  function openLightBox(){
-    lightBox.classList.add('show-lightbox');
-  }
-    
-  function closeLightBox(){
-    lightBox.classList.remove('show-lightbox');
-  }
-
 
 
   //! EVENTS
@@ -115,9 +73,6 @@ c.start();
     }
 
   });
-
-    clickMe.addEventListener('click', openLightBox);
-    closeBox.addEventListener('click', closeLightBox);
 
 
 })();

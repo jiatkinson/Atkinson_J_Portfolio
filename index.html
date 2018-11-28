@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.1/lottie.js"></script>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.1/lottie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 </head>
 <body>
 
@@ -33,11 +35,11 @@
           
                   <div id="main-menu" class="large-offset-3 large-9 columns">
                     <ul id="mainNav">
-                      <li><a href="#homePage">Home</a></li>
+                      <li><a href="#home-page">Home</a></li>
                       <li><a href="#about-me">About Me</a></li>
-                      <li><a href="#my-work">My Work</a></li>
-                      <li><a href="#clients">Clients</a></li>
-                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="#divide-work">My Work</a></li>
+                      <li><a href="#divide-clients">Clients</a></li>
+                      <li><a href="#divide-contact">Contact</a></li>
                       </ul>
                   </div>
               </nav>
@@ -48,7 +50,7 @@
 
 
 <!-- Video Background -->
-    <div id="homePage">
+    <div id="home-page">
         <div class="bg-video row">
             <video class="bg-video_content small-12 columns" autoplay muted loop></video>
         </div>
@@ -57,6 +59,8 @@
                 <h2>Content Creator</h2>
         </div>
     </div>
+
+    <div class=""></div>
 
 <!-- ABOUT ME -->
     <section id="about-me" class="row">
@@ -72,19 +76,19 @@
             <div id="education-bars" class="small-12 columns">
 
                 <div id="program1" class="medium-4 columns">
-                        <div id="first-program"></div>                    
+                        <img src="images/bar1.svg" alt="Bar1" id="first-program">                   
                         <h3>Broadcasting - Television</h3>
                         <p>2 years - Diploma</p>
                 </div>
 
                 <div id="program2" class="medium-4 columns">
-                        <div id="second-program"></div>        
+                        <img src="images/bar2.svg" alt="Bar2" id="second-program">    
                         <h3>Visual Effects and Editing for Contemporary Media</h3>
                         <p>1 year - Certificate</p>
                 </div>
 
                 <div id="program3" class="medium-4 columns">
-                        <div id="third-program"></div>
+                        <img src="images/bar3.svg" alt="Bar3" id="third-program">  
                         <h3>Interactive Media Design</h3>
                         <p>2 years - Diploma</p>
                 </div>
@@ -148,30 +152,30 @@
             <g id="circles">
                 <g id="visual-effects-m">
                     
-                        <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -357.5262 299.1581)" class="st1skills" cx="182.4" cy="581.2" rx="35.3" ry="35.3"/>
+                        <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -357.5262 299.1581)" class="st1skills grow" cx="182.4" cy="581.2" rx="35.3" ry="35.3"/>
                 </g>
                 <g id="website-design-m">
-                    <ellipse transform="matrix(0.738 -0.6748 0.6748 0.738 -6.6869 77.6996)" class="st1skills" cx="96.7" cy="47.5" rx="28.4" ry="28.4"/>
+                    <ellipse transform="matrix(0.738 -0.6748 0.6748 0.738 -6.6869 77.6996)" class="st1skills grow" cx="96.7" cy="47.5" rx="28.4" ry="28.4"/>
                 </g>
                 <g id="motion-graphics-m">
                     
-                        <ellipse transform="matrix(0.1877 -0.9822 0.9822 0.1877 -236.3668 573.3231)" class="st1skills" cx="228.4" cy="429.6" rx="41.8" ry="41.8"/>
+                        <ellipse transform="matrix(0.1877 -0.9822 0.9822 0.1877 -236.3668 573.3231)" class="st1skills grow" cx="228.4" cy="429.6" rx="41.8" ry="41.8"/>
                 </g>
                 <g id="photography-m">
                     
-                        <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -160.9304 204.0259)" class="st1skills" cx="165.8" cy="296.3" rx="50.3" ry="50.3"/>
+                        <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -160.9304 204.0259)" class="st1skills grow" cx="165.8" cy="296.3" rx="50.3" ry="50.3"/>
                 </g>
                 <g id="videography-m">
                     
-                        <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -287.4488 189.6539)" class="st1skills" cx="85.2" cy="441.8" rx="74.8" ry="74.8"/>
+                        <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -287.4488 189.6539)" class="st1skills grow" cx="85.2" cy="441.8" rx="74.8" ry="74.8"/>
                 </g>
                 <g id="social-media-m">
                     
-                        <ellipse transform="matrix(0.2291 -0.9734 0.9734 0.2291 -162.8485 207.0811)" class="st1skills" cx="49.3" cy="206.4" rx="42.3" ry="42.3"/>
+                        <ellipse transform="matrix(0.2291 -0.9734 0.9734 0.2291 -162.8485 207.0811)" class="st1skills grow" cx="49.3" cy="206.4" rx="42.3" ry="42.3"/>
                 </g>
                 <g id="graphic-design-m">
                     
-                        <ellipse transform="matrix(0.8889 -0.4581 0.4581 0.8889 -43.1891 114.8334)" class="st1skills" cx="215.2" cy="146.5" rx="38" ry="38"/>
+                        <ellipse transform="matrix(0.8889 -0.4581 0.4581 0.8889 -43.1891 114.8334)" class="st1skills grow" cx="215.2" cy="146.5" rx="38" ry="38"/>
                 </g>
                 <text id="Videography-m" transform="matrix(1 0 0 1 31.3358 447.2184)" class="st2skills st3skills st4skills">Videography</text>
                 <text id="Photography-m" transform="matrix(1 0 0 1 123.881 302.144)" class="st2skills st3skills st5skills">Photography</text>
@@ -282,7 +286,7 @@
                 </div>
             </div>
 
-            <div class="info-icons small-12 medium-2 columns"">
+            <div class="info-icons small-12 medium-2 columns">
                 <div id="animate-instagram"></div>
 
                 <div class="info-text">
@@ -291,7 +295,7 @@
                 </div>
             </div>
 
-            <div class="info-icons small-12 medium-2 columns end"">
+            <div class="info-icons small-12 medium-2 columns end">
                 <div id="animate-soccer"></div>
 
                 <div class="info-text">
@@ -305,7 +309,9 @@
 
     </section>
 
-    <div class="line-separator small-offset-1 small-10 end columns"></div>
+    <div class="row">
+        <div id="divide-work" class="line-separator small-offset-2 small-8 end columns"></div>
+    </div>
 
 <!-- MY WORK -->
     <section id="my-work" class="row">
@@ -319,36 +325,36 @@
 
 
         <div class="video-section">
-
-                <div class="light-box small-12 medium-10 columns">
-                    <p class="exit">X</p>
-                    <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/H7AKS97cbH0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <p>Block Party Test Video</p>
-                </div>
-
             <div id="video1" class="small-12 medium-6 large-4 columns video">
-                <img src="images/video-1.png" alt="Block Party Thumbnail">
+                <img class="jslghtbx-thmb" src="images/video-1.png" alt="Block Party Thumbnail" data-jslghtbx="video/bg_videos/desktop.m4v">
+                <p>BlockParty 2017 Official After Movie</p>
             </div>
             <div id="video2" class="small-12 medium-6 large-4 columns video">
                 <img src="images/video-2.png" alt="Hessenland Thumbnail">
+                <p>Hessenland Inn Promo</p>
             </div>
             <div id="video3" class="small-12 medium-6 large-4 columns video">
                 <img src="images/video-3.png" alt="Caretaker Thumbnail">
+                <p>Kingzmn ft. Raven J - Caretaker (Lyric Video)</p>
             </div>
             <div id="video4" class="small-12 medium-6 large-4 columns video">
                 <img src="images/video-4.png" alt="Julie Hawkins Thumbnail">
+                <p>Julie Hawkins Art Promo</p>
             </div>
             <div id="video5" class="small-12 medium-6 large-4 columns video">
                 <img src="images/video-5.png" alt="Ontario's Blue Coast Thumbnail">
+                <p>Conquer The Coast / Ontario’s Blue Coast</p>
             </div>
             <div id="video6" class="small-12 medium-6 large-4 columns video">
                 <img src="images/video-6.png" alt="On My High Thumbnail">
+                <p>On My High (Personal Project)</p>
             </div>
         </div>
-
-        <div class="line-separator small-offset-1 small-10 end columns"></div>
-
     </section>
+
+    <div class="row">
+        <div id="divide-clients" class="line-separator small-offset-2 small-8 end columns"></div>
+    </div>
 
 <!-- CLIENTS -->
     <section id="clients" class="row">
@@ -368,7 +374,9 @@
         </ul>
     </section>
 
-    <div class="line-separator small-offset-1 small-10 end columns"></div>
+    <div class="row">
+        <div id="divide-contact" class="line-separator small-offset-2 small-8 end columns"></div>
+    </div>
 
 <!-- CONTACT -->
 <div class="contact row">  
@@ -390,11 +398,15 @@
       </div>
     </section>
 
-
+    <script src="js/lightbox.js" type="text/javascript"></script>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/countUp.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        var lightbox = new Lightbox();
+        lightbox.load();
+    </script>
 </body>
 </html>
