@@ -40,6 +40,7 @@ var animation = bodymovin.loadAnimation({
   
   c.start();
 
+
   //! VARIABLES
 
 
@@ -73,6 +74,8 @@ var animation = bodymovin.loadAnimation({
     }
 
   });
+
+  
 
 
 })();

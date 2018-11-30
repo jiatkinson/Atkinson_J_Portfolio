@@ -4,7 +4,7 @@
     $pw = "root";
 
     try {
-        $conn = new PDO('mysql:host=localhost;dbname=vue_video', $user, $pw);
+        $conn = new PDO('mysql:host=localhost;dbname=portfolio', $user, $pw);
         //var_dump($conn);
     } catch(PDOException $exception) {
         echo 'connect error!' . $exception->getMessage();

@@ -383,13 +383,11 @@ border-bottom:1px solid #b5b5b5;
   color: #3f3f3f;
 }
 
-
 .video-section 
 {
   margin-left: 0px;
   margin-right: 0px;
 }
-
 
 .video p
 {
@@ -398,6 +396,47 @@ border-bottom:1px solid #b5b5b5;
   font-size: 14px;
   font-weight: bold;
 }
+
+.red{
+  color: red;
+}
+
+.light-box{
+  position:absolute;
+  /*   needs "position:absolute" to go ontop of other content  */
+  
+  top:0;
+  right:0;
+    /* needs top/right/bottom/ or left to be positioned (only while using position absolute)*/
+  
+  background-color:blue;
+  color:white;
+  width:50%;
+}
+
+.show-lightbox{
+  display: block !important;
+  /*the !important at the end of display will override the display that used to be on this element*/
+}
+
+.vid_container
+{
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.vid_container > video
+{
+  width: 90%    !important;
+  height: auto   !important;
+}
+
 
 /* CLIENTS */
 
