@@ -278,14 +278,6 @@ h3
   display: block;
 }
 
-.grow:hover {
-  transform: scaleX(1);
-  transform-origin: 'center'; 
-}
-.grow {
-  transition: all 1s;
-}
-
 #skills h1
 {
   font-size: 24px;
@@ -397,38 +389,25 @@ border-bottom:1px solid #b5b5b5;
   font-weight: bold;
 }
 
-.red{
-  color: red;
-}
-
-.light-box{
-  position:absolute;
-  /*   needs "position:absolute" to go ontop of other content  */
-  
-  top:0;
-  right:0;
-    /* needs top/right/bottom/ or left to be positioned (only while using position absolute)*/
-  
-  background-color:blue;
-  color:white;
-  width:50%;
-}
-
-.show-lightbox{
-  display: block !important;
-  /*the !important at the end of display will override the display that used to be on this element*/
+#lightbox
+{
+  position: absolute;
 }
 
 .vid_container
 {
-  position: absolute;
   overflow: hidden;
   width: 100%;
   left: 0; 
   right: 0; 
   margin-left: auto; 
   margin-right: auto;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(247, 247, 247);
+  position: fixed !important;
+  top: 30% !important;
+  padding-top: 30px;
+  z-index: 75;
+  
 }
 
 .vid_container > video
@@ -437,6 +416,26 @@ border-bottom:1px solid #b5b5b5;
   height: auto   !important;
 }
 
+.vid_container > p
+{
+  margin-top: 10px;
+  color: #3f3f3f;
+  font-size: 14px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#exit
+{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 7px;
+  margin-top: 7px;
+  cursor: pointer;
+  font-family: 'Metropolis-SemiBold';
+  color: #272727;
+}
 
 /* CLIENTS */
 

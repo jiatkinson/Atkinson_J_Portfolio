@@ -75,7 +75,18 @@ var animation = bodymovin.loadAnimation({
 
   });
 
-  
+
+  var video = document.getElementById("video");
+  var exit = document.getElementById("exit");
+  exit.addEventListener("click",function(){
+    video.pause();
+  });
+
+  document.documentElement.style.overflow = 'hidden';
+  document.body.scroll = "no";
+
+  document.documentElement.style.overflow = 'scroll';
+  document.body.scroll = "yes";
 
 
 })();

@@ -346,11 +346,12 @@
 
 
             <div id="lightbox" class="hide vid_container">
+                <div onclick="javascript:document.getElementById('lightbox').className='hide test'">
+                    <p class="exit" id="exit">X</p>
+                </div>
                 <video id="video" src="./video/video-1.mp4" autoplay controls></video>
                 <p id="video_description"></p>
-                <div onclick="javascript:document.getElementById('lightbox').className='hide test'">
-                <p class="exit">X</p>
-                </div>
+
             </div>
 
         <div class="small-12 medium-12 large-offset-1 large-10 columns" id="buttonCon">
