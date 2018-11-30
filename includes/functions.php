@@ -1,33 +1,28 @@
 <?php
 include 'connect.php';
 
-function get_single_video($pdo, $vid) {
-    $query = "SELECT * FROM video WHERE id = '$vid'";
+function get_all_items($pdo, $table_name) {
+    $query = "SELECT * FROM ".$table_name;
 
-    $get_video = $pdo->query($query);
+    $get_all_items = $pdo->query($query);
     $results = array();
 
-    while($row = $get_video->fetch(PDO::FETCH_ASSOC)) {
+    while($row = $get_all_items->fetch(PDO::FETCH_ASSOC)) {
         $results[] = $row;
-
-        // you could run subresult queries here - just write another function and append.
     }
 
     return $results;
 }
 
 
-function get_all_videos($pdo) {
-    $query = "SELECT * FROM video";
-
-    $get_video = $pdo->query($query);
-    $results = array();
-
-    while($row = $get_video->fetch(PDO::FETCH_ASSOC)) {
-        $results[] = $row;
+function send_mail($name, $email, $message) {
+    $success=mail ("jiatkinson@xcelco.on.ca",$name." has submitted a message", $message);
+    if($success) {
+        return "success";
+        
+    } else {
+        return "failure";
     }
-
-    return $results;
 }
 
 ?>
