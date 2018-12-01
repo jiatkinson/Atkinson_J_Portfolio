@@ -100,22 +100,22 @@
                 <h2>Fanshawe College</h2>
             </div>
 
-            <div id="education-bars" class="small-12 columns">
+            <div id="education-bars" class="small-12 columns programsCon">
 
-                <div id="program1" class="medium-4 columns">
-                        <img src="images/bar1.svg" alt="Bar1" id="first-program">                   
+                <div id="program1" class="medium-4 columns programs">
+                        <img src="images/bar1.svg" alt="Bar1" class="bar-wrap" id="first-program">                   
                         <h3>Broadcasting - Television</h3>
                         <p>2 years - Diploma</p>
                 </div>
 
-                <div id="program2" class="medium-4 columns">
-                        <img src="images/bar2.svg" alt="Bar2" id="second-program">    
+                <div id="program2" class="medium-4 columns programs">
+                        <img src="images/bar2.svg" alt="Bar2" class="bar-wrap" id="second-program">    
                         <h3>Visual Effects and Editing for Contemporary Media</h3>
                         <p>1 year - Certificate</p>
                 </div>
 
-                <div id="program3" class="medium-4 columns">
-                        <img src="images/bar3.svg" alt="Bar3" id="third-program">  
+                <div id="program3" class="medium-4 columns programs">
+                        <img src="images/bar3.svg" alt="Bar3" class="bar-wrap" id="third-program">  
                         <h3>Interactive Media Design</h3>
                         <p>2 years - Diploma</p>
                 </div>
@@ -345,12 +345,14 @@
         <h2 class="hide">My Work</h2>
 
 
-            <div id="lightbox" class="hide vid_container">
+            <div id="lightbox" class="hide vid_container small-12 columns">
                 <div onclick="javascript:document.getElementById('lightbox').className='hide test'">
                     <p class="exit" id="exit">X</p>
                 </div>
-                <video id="video" src="./video/video-1.mp4" autoplay controls></video>
+                <div id="test" class="vid_elements">
+                <video id="video" src="./video/video-1.mp4" controls></video>
                 <p id="video_description"></p>
+                </div>
 
             </div>
 

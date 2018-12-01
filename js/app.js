@@ -88,5 +88,4 @@ var animation = bodymovin.loadAnimation({
   document.documentElement.style.overflow = 'scroll';
   document.body.scroll = "yes";
 
-
 })();
