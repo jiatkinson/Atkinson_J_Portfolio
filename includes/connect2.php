@@ -3,8 +3,8 @@
     // $user = "root";
     // $pw = "root";
 
-    $user = "jiatkinson7";
-    $pw = "jacobatkinsonpassword";
+    $user = "Fanshawe_test1";
+    $pw = "password";
 
     try {
         $conn = new PDO('mysql:host=localhost;dbname=jacob_atkinson_portfolio', $user, $pw);

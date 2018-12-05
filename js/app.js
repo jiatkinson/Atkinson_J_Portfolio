@@ -82,6 +82,16 @@ var animation = bodymovin.loadAnimation({
     video.pause();
   });
 
+  // const closeLB = document.querySelector(".close");
+
+  // function closeLightBox() {
+  //   document.getElementById('lightbox').className='hide test';
+  // }
+
+  // closeLB.addEventListener("click", closeLightBox);
+
+
+  
   document.documentElement.style.overflow = 'hidden';
   document.body.scroll = "no";
 

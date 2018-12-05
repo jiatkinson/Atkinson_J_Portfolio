@@ -1,3 +1,8 @@
+<?php
+include 'includes/functions.php';
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,16 +16,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 </head>
 <body>
-
-    <?php
-
-        include './includes/functions.php';
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL);
-
-    ?>
-
     <script>
         function send_email(name, email, message) {
             var xmlhttp = new XMLHttpRequest();
@@ -128,7 +123,6 @@
             <h1>Skills</h1>
 
             <div id="mobile-chart" class="show-for-small-only columns">
-            <?xml version="1.0" encoding="utf-8"?>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 279 633" style="enable-background:new 0 0 279 633;" xml:space="preserve">
              
@@ -217,7 +211,6 @@
             </div>
 
             <div id="main_chart" class="show-for-medium-up columns mobile-hide">
-                <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 623 282" style="enable-background:new 0 0 623 282;" xml:space="preserve">
                 <style type="text/css">
@@ -365,7 +358,7 @@
 
         <div class="video-section">
             <?php
-                $video_data = get_all_items($conn, "portfolio_videos");
+                $video_data = get_all_items("portfolio_videos");
                 $counter = 0;
                 foreach ($video_data as $video) {
                     $counter++;
@@ -391,7 +384,7 @@
         <ul id="clientList" class="small-12 columns">
 
             <?php
-                $client_data = get_all_items($conn, "portfolio_clients");
+                $client_data = get_all_items("portfolio_clients");
                 foreach ($client_data as $client) {
                 echo '<li><a href="'. $client["clients_url"] .'">'. $client["clients_name"].'</a></li>';
                 }

@@ -1,10 +1,10 @@
 <?php
-include 'connect.php';
 
-function get_all_items($pdo, $table_name) {
+function get_all_items($table_name) {
+    include 'connect.php';
     $query = "SELECT * FROM ".$table_name;
 
-    $get_all_items = $pdo->query($query);
+    $get_all_items = $conn->query($query);
     $results = array();
 
     while($row = $get_all_items->fetch(PDO::FETCH_ASSOC)) {
