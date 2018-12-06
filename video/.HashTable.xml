@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>video-1.mp4</key>
+	<dict>
+		<key>DateCreated</key>
+		<date>2018-12-03T02:21:53Z</date>
+		<key>FileSize</key>
+		<integer>36629064</integer>
+		<key>HashValue</key>
+		<string>00030000564944454F9943E9D7746F73B42D9D17BA2F3CF51BF434FBED24CFF3609B1713BA07022182003EBD61D243B35269736F6D0000000008000000000000</string>
+	</dict>
+	<key>video-2.mp4</key>
+	<dict>
+		<key>DateCreated</key>
+		<date>2018-12-03T02:21:53Z</date>
+		<key>FileSize</key>
+		<integer>27151472</integer>
+		<key>HashValue</key>
+		<string>00030000564944454F0DD05664F3509BF29B97CEF7681F732BF16E7F4D13DAC10B034E6EB3D566517768FF8E5401439FA56D7034320000000008000000000000</string>
+	</dict>
+	<key>video-3.mp4</key>
+	<dict>
+		<key>DateCreated</key>
+		<date>2018-12-03T02:21:53Z</date>
+		<key>FileSize</key>
+		<integer>22330139</integer>
+		<key>HashValue</key>
+		<string>00030000564944454FAE391C5C9E0EF8EC9B9DF591A7DBD7E4BA431F73CC03C338D3092D0834F1569B5D6E53E9A8DD4F2569736F6D0000000008000000000000</string>
+	</dict>
+	<key>video-4.mp4</key>
+	<dict>
+		<key>DateCreated</key>
+		<date>2018-12-03T02:21:53Z</date>
+		<key>FileSize</key>
+		<integer>12687423</integer>
+		<key>HashValue</key>
+		<string>00030000564944454F7FD248BE7CAB39C7F92ED64761FB559C1F01CAF593536136E468B9FF3663F2E69713C9995C493EA56D7034320000000008000000000000</string>
+	</dict>
+	<key>video-5.mp4</key>
+	<dict>
+		<key>DateCreated</key>
+		<date>2018-12-03T02:21:53Z</date>
+		<key>FileSize</key>
+		<integer>27919937</integer>
+		<key>HashValue</key>
+		<string>00030000564944454FF98C90F3F1A2345F9A08FCE13326DA51D1DCA2E67953FD149DA4F3669C5A6C5CDD4CF591B97373706D7034320000000008000000000000</string>
+	</dict>
+	<key>video-6.mp4</key>
+	<dict>
+		<key>DateCreated</key>
+		<date>2018-12-03T02:21:53Z</date>
+		<key>FileSize</key>
+		<integer>57525086</integer>
+		<key>HashValue</key>
+		<string>00030000564944454FFAF4311625AD7B76948E11AC3AE75374F14A2B561BCB7D3AD03D66EEA4D6BB187DC1BF262AAA82266D7034320000000008000000000000</string>
+	</dict>
+</dict>
+</plist>

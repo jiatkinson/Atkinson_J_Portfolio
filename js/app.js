@@ -77,6 +77,10 @@ var animation = bodymovin.loadAnimation({
 
   // closeLB.addEventListener("click", closeLightBox);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ab462c66de4321cd0f3335076ca37039e498bb1
   
   document.documentElement.style.overflow = 'hidden';
   document.body.scroll = "no";
