@@ -28,19 +28,6 @@ var animation = bodymovin.loadAnimation({
     path: './data/animate-soccer.json'
 })
 
-  var c = new CountUp("counter1",0,15);
-
-  c.start();
-  
-  var c = new CountUp("counter2",0,5000);
-  
-  c.start();
-  
-  var c = new CountUp("counter3",0,5);
-  
-  c.start();
-
-
   //! VARIABLES
 
 
@@ -82,6 +69,15 @@ var animation = bodymovin.loadAnimation({
     video.pause();
   });
 
+  // const closeLB = document.querySelector(".close");
+
+  // function closeLightBox() {
+  //   document.getElementById('lightbox').className='hide test';
+  // }
+
+  // closeLB.addEventListener("click", closeLightBox);
+
+  
   document.documentElement.style.overflow = 'hidden';
   document.body.scroll = "no";
 

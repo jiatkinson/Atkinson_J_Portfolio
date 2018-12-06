@@ -1,3 +1,8 @@
+<?php
+include 'includes/functions.php';
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,19 +13,8 @@
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.1/lottie.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 </head>
 <body>
-
-    <?php
-
-        include './includes/functions.php';
-        ini_set('display_errors', 1);
-        ini_set('display_startup_errors', 1);
-        error_reporting(E_ALL);
-
-    ?>
-
     <script>
         function send_email(name, email, message) {
             var xmlhttp = new XMLHttpRequest();
@@ -63,7 +57,7 @@
                   <div id="main-menu" class="large-offset-3 large-9 columns">
                     <ul id="mainNav">
                       <li><a href="#home-page">Home</a></li>
-                      <li><a href="#about-me">About Me</a></li>
+                      <li><a href="#social-media">About Me</a></li>
                       <li><a href="#divide-work">My Work</a></li>
                       <li><a href="#divide-clients">Clients</a></li>
                       <li><a href="#divide-contact">Contact</a></li>
@@ -81,13 +75,19 @@
         <div class="bg-video row">
             <video class="bg-video_content small-12 columns" autoplay muted loop></video>
         </div>
+        
         <div class="homeText">
                 <h1>Jacob Atkinson</h1>
                 <h2>Content Creator</h2>
         </div>
-    </div>
 
-    <div class=""></div>
+        <div class="socialMedia small-12 columns" id="social-media">
+            <a href="https://www.instagram.com/jiatkinson7"><img src="images/instagram.svg" alt="Instagram" class="icon"></a>
+            <a href="https://www.youtube.com/1jiatkinson1"><img src="images/youtube.svg" alt="YouTube" class="icon"></a>
+            <a href="https://www.facebook.com/atkinsonfilms"><img src="images/facebook.svg" alt="Facebook" class="icon"></a>
+            <a href="https://www.linkedin.com/in/jacob-atkinson-906405117"><img src="images/linkedin.svg" alt="linkedin" class="icon"></a>
+        </div>
+    </div>
 
 <!-- ABOUT ME -->
     <section id="about-me" class="row">
@@ -128,7 +128,6 @@
             <h1>Skills</h1>
 
             <div id="mobile-chart" class="show-for-small-only columns">
-            <?xml version="1.0" encoding="utf-8"?>
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 279 633" style="enable-background:new 0 0 279 633;" xml:space="preserve">
              
@@ -217,7 +216,6 @@
             </div>
 
             <div id="main_chart" class="show-for-medium-up columns mobile-hide">
-                <?xml version="1.0" encoding="utf-8"?>
                 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                      viewBox="0 0 623 282" style="enable-background:new 0 0 623 282;" xml:space="preserve">
                 <style type="text/css">
@@ -357,15 +355,13 @@
             </div>
 
         <div class="small-12 medium-12 large-offset-1 large-10 columns" id="buttonCon">
-            <button id="video-button">Videos</button>
-            <span>/</span>
-            <button id="photo-button">Photos</button>
+            <h2 id="video-button">Videos</h2>
         </div><br>
 
 
         <div class="video-section">
             <?php
-                $video_data = get_all_items($conn, "portfolio_videos");
+                $video_data = get_all_items("portfolio_videos");
                 $counter = 0;
                 foreach ($video_data as $video) {
                     $counter++;
@@ -391,7 +387,7 @@
         <ul id="clientList" class="small-12 columns">
 
             <?php
-                $client_data = get_all_items($conn, "portfolio_clients");
+                $client_data = get_all_items("portfolio_clients");
                 foreach ($client_data as $client) {
                 echo '<li><a href="'. $client["clients_url"] .'">'. $client["clients_name"].'</a></li>';
                 }
@@ -409,13 +405,13 @@
         <form id="contact" class="small-12 columns" action="" method="post">
         <h1>Great Minds Work Together</h1>
           <fieldset>
-            <input id="name" placeholder="Name" type="text" tabindex="1" required autofocus>
+            <input id="name" placeholder="NAME" type="text" tabindex="1" required>
           </fieldset>
           <fieldset>
-            <input id="email" placeholder="Email" type="email" tabindex="2" required>
+            <input id="email" placeholder="EMAIL" type="email" tabindex="2" required>
           </fieldset>
           <fieldset>
-            <textarea id="message" placeholder="Message" tabindex="5" required></textarea>
+            <textarea id="message" placeholder="MESSAGE" tabindex="3" required></textarea>
           </fieldset>
           <fieldset>
             <button type="button" onclick="send_email(document.getElementById('name').value,document.getElementById('email').value,document.getElementById('message').value)" id="contact-submit">Send Message</button>
@@ -427,7 +423,6 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/countUp.js"></script>
     <script src="js/app.js"></script>
 
 </body>

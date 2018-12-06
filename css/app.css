@@ -178,7 +178,7 @@ h1
   letter-spacing: 5px;
   z-index: 1;
   text-align: center;
-  padding-top: 50%;
+  padding-top: 63%;
 }
 
 .homeText h2
@@ -212,6 +212,17 @@ h1
   object-fit: cover;
 }
 
+.socialMedia
+{
+  text-align: center;
+  margin-top: 44%;
+}
+
+.socialMedia img
+{
+  max-width: 20px;
+  margin: 5px;
+}
 
 
 
@@ -354,15 +365,16 @@ border-bottom:1px solid #b5b5b5;
   margin-top: 20px;
 }
 
-#my-work button
+#my-work h2
 {
   margin-bottom: 20px;
   text-transform: uppercase;
+  color: #3f3f3f;
+  margin-bottom: 10px;
   font-family: 'Avenir';
   font-weight: bold;
+  text-align: center;
   font-size: 24px;
-  color: #3f3f3f;
-  cursor: pointer;
 }
 
 #my-work span
@@ -549,18 +561,17 @@ fieldset
 	width: 100%;
 }
 
-#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea
+#contact input[type="text"], #contact input[type="email"], #contact textarea
 {
 	width: 100%;
 	border: 1px solid #CCC;
 	background: #FFF;
 	margin-right: 5px;
   padding: 10px;
-  text-transform: uppercase;
   font-size: 15px;
 }
 
-#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact input[type="tel"]:hover, #contact input[type="url"]:hover, #contact textarea:hover
+#contact input[type="text"]:hover, #contact input[type="email"]:hover, #contact textarea:hover
 {
 	-webkit-transition:border-color 0.3s ease-in-out;
 	-moz-transition:border-color 0.3s ease-in-out;
@@ -599,7 +610,20 @@ button#contact-submit
 }
 
 
+@media screen and (min-width: 375px){
 
+.socialMedia
+{
+  margin-top: 48%;
+}
+
+.socialMedia img
+{
+  max-width: 25px;
+}
+
+
+}
 
 @media screen and (min-width: 400px){
 
@@ -619,9 +643,15 @@ button#contact-submit
   margin-top: 77%;
 }
 
+.socialMedia
+{
+  margin-top: 56%;
 }
 
-@media screen and (min-width: 400px){
+.socialMedia img
+{
+  max-width: 28px;
+}
 
 #about-me
 {
@@ -632,146 +662,156 @@ button#contact-submit
 
 @media screen and (min-width: 640px){
 
-.homeText h1
-{
-  font-size: 60px;
-  padding-top: 23%;
-}
+  .homeText h1
+  {
+    font-size: 60px;
+    padding-top: 23%;
+  }
+  
+  .homeText h2
+  {
+    font-size: 40px;
+  }
+  
+  .socialMedia
+  {
+    margin-top: 24%;
+  }
 
-.homeText h2
-{
-  font-size: 40px;
-}
-
-#about-me
-{
-  margin-top: 35%;
-}
-
-.mobile-hide
-{
-  display: block;
-}
-
-#program1
-{
-  display: inline;
-}
-
-#program2
-{
-  display: inline;
-}
-
-#program3
-{
-  display: inline;
-}
-
-#about-me h1
-{
-  font-size: 28px;
-  display: inline;
-}
-
-#about-me h2
-{
-  font-size: 28px;
-  margin-top: -10px;
-  display: inline;
-}
-
-#education-title
-{
-  text-align: center;
+  .socialMedia img
+  {
+    max-width: 25px;
+  }
+  
+  #about-me
+  {
+    margin-top: 35%;
+  }
+  
+  .mobile-hide
+  {
+    display: block;
+  }
+  
+  #program1
+  {
+    display: inline;
+  }
+  
+  #program2
+  {
+    display: inline;
+  }
+  
+  #program3
+  {
+    display: inline;
+  }
+  
+  #about-me h1
+  {
+    font-size: 28px;
+    display: inline;
+  }
+  
+  #about-me h2
+  {
+    font-size: 28px;
+    margin-top: -10px;
+    display: inline;
+  }
+  
+  #education-title
+  {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  #education-bars h3
+  {
+    font-family: 'Metropolis-Black';
+    font-size: 15px;
+    text-align: center;
+    color: #b3212c;
+  }
+  
+  #education-bars p
+  {
+    font-family: 'Metropolis-RegularItalic';
+    font-size: 15px;
+    color: #3f3f3f;
+    margin-top: -10px;
+    text-align: center;
+  }
+  
+  #first-program, #second-program, #third-program
+  {
+    float: none;
+  }
+  
+  #skills
+  {
+    margin-top: 10px;
+  }
+  
+  #skills h1
+  {
+    font-size: 28px;
+    display: block;
+  }
+  
+  #unique-info
+  {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .info-icons h1, p
+  {
+    text-align: center;
+  }
+  
+  
+  #animate-plane
+  {
+      width: 90%;
+  }
+  
+  
+  #animate-instagram
+  {
+      width: 90%;
+  }
+  
+  #animate-soccer
+  {
+      width: 90%;
+  }
+  
+  .info-text
+  {
+  margin-top: -6px;
   margin-bottom: 10px;
-}
-
-#education-bars h3
-{
-  font-family: 'Metropolis-Black';
-  font-size: 15px;
-  text-align: center;
-  color: #b3212c;
-}
-
-#education-bars p
-{
-  font-family: 'Metropolis-RegularItalic';
-  font-size: 15px;
-  color: #3f3f3f;
+  }
+  
+  .info-text h1
+  {
+  font-size: 23px;
+  }
+  
+  .info-text p
+  {
+  font-size: 10px;
   margin-top: -10px;
-  text-align: center;
+  }
+  
+  .vid_elements > p
+  {
+    font-size: 16px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
 }
-
-#first-program, #second-program, #third-program
-{
-  float: none;
-}
-
-#skills
-{
-  margin-top: 10px;
-}
-
-#skills h1
-{
-  font-size: 28px;
-  display: block;
-}
-
-#unique-info
-{
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-.info-icons h1, p
-{
-  text-align: center;
-}
-
-
-#animate-plane
-{
-    width: 90%;
-}
-
-
-#animate-instagram
-{
-    width: 90%;
-}
-
-#animate-soccer
-{
-    width: 90%;
-}
-
-.info-text
-{
-margin-top: -6px;
-margin-bottom: 10px;
-}
-
-.info-text h1
-{
-font-size: 23px;
-}
-
-.info-text p
-{
-font-size: 10px;
-margin-top: -10px;
-}
-
-.vid_elements > p
-{
-  font-size: 16px;
-  margin-left: 45px;
-  margin-right: 45px;
-}
-
 
 @media screen and (min-width: 1024px){
 
@@ -831,6 +871,15 @@ margin-top: -10px;
     margin-top: 23%;
   }
 
+  .socialMedia
+  {
+    margin-top: 13%;
+  }
+
+  .socialMedia img
+  {
+    max-width: 30px;
+  }
 
   #animate-plane
   {
@@ -908,5 +957,19 @@ margin-top: -10px;
       transform:scaleX(1);
   }
 }
+
+}
+
+@media screen and (min-width: 1440px){
+
+  .socialMedia
+  {
+    margin-top: 9%;
+  }
+
+  .socialMedia img
+  {
+    max-width: 40px;
+  }
 
 }
