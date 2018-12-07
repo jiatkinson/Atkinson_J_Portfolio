@@ -68,19 +68,6 @@ var animation = bodymovin.loadAnimation({
   exit.addEventListener("click",function(){
     video.pause();
   });
-
-  // const closeLB = document.querySelector(".close");
-
-  // function closeLightBox() {
-  //   document.getElementById('lightbox').className='hide test';
-  // }
-
-  // closeLB.addEventListener("click", closeLightBox);
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 4ab462c66de4321cd0f3335076ca37039e498bb1
   
   document.documentElement.style.overflow = 'hidden';
   document.body.scroll = "no";
