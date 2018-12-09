@@ -53,11 +53,11 @@ var animation = bodymovin.loadAnimation({
     window.addEventListener('load', () => {
 
     if (window.matchMedia("(max-width: 700px)").matches) {
-      videoSource(backgroundVideo, 'video/bg_videos/mobile.m4v', 'video/mp4');
+      videoSource(backgroundVideo, 'video/bg_videos/mobile.mp4', 'video/mp4');
     } else if (window.matchMedia("(max-width: 999px)").matches) {
-      videoSource(backgroundVideo, 'video/bg_videos/tablet.m4v', 'video/mp4');
+      videoSource(backgroundVideo, 'video/bg_videos/tablet.mp4', 'video/mp4');
     } else if (window.matchMedia("(min-width: 1000px)").matches) {
-      videoSource(backgroundVideo, 'video/bg_videos/desktop.m4v', 'video/mp4');
+      videoSource(backgroundVideo, 'video/bg_videos/desktop.mp4', 'video/mp4');
     }
 
   });

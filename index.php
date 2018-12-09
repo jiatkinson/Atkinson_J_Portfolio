@@ -1,8 +1,3 @@
-<?php
-include 'includes/functions.php';
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +10,15 @@ error_reporting(E_ALL);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.4.1/lottie.js"></script>
 </head>
 <body>
+
+    <?php
+
+        include './includes/functions.php';
+        ini_set('display_errors', 1);
+        error_reporting(E_ALL);
+
+    ?>
+
     <script>
         function send_email(name, email, message) {
             var xmlhttp = new XMLHttpRequest();
@@ -347,7 +351,7 @@ error_reporting(E_ALL);
                 <div onclick="javascript:document.getElementById('lightbox').className='hide test'">
                     <p class="exit" id="exit">X</p>
                 </div>
-                <div id="test" class="vid_elements">
+                <div class="vid_elements">
                 <video id="video" src="./video/video-1.mp4" controls></video>
                 <p id="video_description"></p>
                 </div>

@@ -457,11 +457,13 @@ border-bottom:1px solid #b5b5b5;
   position: absolute;
   right: 0;
   top: 0;
-  margin-right: 7px;
+  margin-right: 12px;
   margin-top: 7px;
   cursor: pointer;
   font-family: 'Metropolis-SemiBold';
   color: #F7F7F7;
+  font-size: 25px;
+  z-index: 50;
 }
 
 /* CLIENTS */
@@ -928,35 +930,39 @@ button#contact-submit
   }
 
   #exit
-{
-  font-size: 20px;
-}
-
-.bar-wrap
-{
-  opacity: 0;
-}
-
-#education:hover > .programsCon > .programs > .bar-wrap
-{
-  animation: bar-grow 2s ease-in-out;
-  transform-origin: 0 0;
-  opacity: 1;
-}
-.bar-wrap
-{
-  transform-origin: 0 0;
-}
-
-@keyframes bar-grow
-{
-  0% {
-      transform:scaleX(0);
+  {
+    margin-right: 12px;
+    margin-top: 7px;
+    font-size: 20px;
+    z-index: 50;
   }
-  100% {
-      transform:scaleX(1);
+
+  .bar-wrap
+  {
+    opacity: 0;
   }
-}
+
+  #education:hover > .programsCon > .programs > .bar-wrap
+  {
+    animation: bar-grow 2s ease-in-out;
+    transform-origin: 0 0;
+    opacity: 1;
+  }
+
+  .bar-wrap
+  {
+    transform-origin: 0 0;
+  }
+
+  @keyframes bar-grow
+  {
+    0% {
+        transform:scaleX(0);
+    }
+    100% {
+        transform:scaleX(1);
+    }
+  }
 
 }
 
